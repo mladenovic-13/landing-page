@@ -7,3 +7,10 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+const checkbox = document.querySelector("#checkbox");
+
+checkbox.addEventListener("change", () => {
+  // toggle website theme
+  document.body.classList.toggle("dark");
+});

@@ -41,6 +41,15 @@
           ><span class="fist">&#x1F44A;</span>
         </h1>
       </a>
+      <!-- Dark/light switch -->
+      <div class="theme-switch">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+          <ion-icon name="moon-outline" class="moon"></ion-icon>
+          <div class="switcher"></div>
+        </label>
+      </div>
       <ul>
         <li class="nav-item">
           <a href="#about" class="nav-link">About</a>
@@ -56,8 +65,6 @@
         </li>
       </ul>
     </nav>
-    <!-- Dark/light switch -->
-
     <!-- Bars for mobile version, hidde on desktop -->
     <ion-icon name="menu" class="hamburger" id="hamburger"></ion-icon>
     <!-- Hero section -->
@@ -196,8 +203,14 @@
     <script src="assets/js/app.js"></script>
 
     <!-- Ion icons CDN -->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <!-- Simple lightbox -->
     <script src="assets/js/simple-lightbox.min.js"></script>
     <script>
