@@ -14,3 +14,24 @@ checkbox.addEventListener("change", () => {
   // toggle website theme
   document.body.classList.toggle("dark");
 });
+
+const hamburger = document.querySelector("#hamburger");
+const navMenu = document.querySelector("ul");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach((n) =>
+  n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
+// function closeMenu() {
+//   hamburger.classList.toggle("active");
+//   navMenu.classList.toggle("active");
+// }
